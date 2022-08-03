@@ -12,7 +12,7 @@ git checkout git@github.com:ILIAS-eLearning/ILIAS.git local-ilias
 export ILIAS_LOCAL_ROOT = path/to/local/ilias
 
 # Execute convenience script to download MUMIE Task plugin
-sh ./downloadMumieTaskPlugin.sh
+sh ./downloadMumieTaskPlugins.sh
 
 # Create docker container with
 docker-compose up

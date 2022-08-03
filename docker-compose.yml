@@ -14,6 +14,7 @@ services:
           - ILIAS_ROOT_PASSWORD=root
         volumes:
           - ${ILIAS_MUMIE_TASK_ROOT}:/var/www/html/Customizing/global/plugins/Services/Repository/RepositoryObject/MumieTask
+          - ${ILIAS_MUMIE_TASK_ROOT}:/var/www/html/Customizing/global/plugins/Services/EventHandling/EventHook/MumieTaskHook
     mysql:
         image: mysql:5.7
         command: |

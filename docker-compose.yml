@@ -1,0 +1,25 @@
+version: '3'
+services:
+    ilias:
+        image: sturai/ilias:6.10-php7.2-apache
+        container_name: ilias_ilias_1
+        ports:
+          - 8090:80
+        links:
+          - mysql
+        environment:
+          - ILIAS_AUTO_SETUP=1
+          - ILIAS_DB_USER=root
+          - ILIAS_DB_PASSWORD=example
+          - ILIAS_ROOT_PASSWORD=root
+        volumes:
+          - ${ILIAS_MUMIE_TASK_ROOT}:/var/www/html/Customizing/global/plugins/Services/Repository/RepositoryObject/MumieTask
+    mysql:
+        image: mysql:5.7
+        command: |
+            --character-set-server=utf8
+            --collation-server=utf8_general_ci
+            --max-allowed-packet=16M
+        environment:
+          - MYSQL_ROOT_PASSWORD=example
+          - MYSQL_DATABASE=ilias

@@ -4,7 +4,7 @@ This repository contains a docker enviroment aimed at MUMIE Task and MUMIE Task 
 
 ## Installation
 
-```
+```bash
 # Checkout the ilias release you want to develop for
 git checkout git@github.com:ILIAS-eLearning/ILIAS.git local-ilias
 

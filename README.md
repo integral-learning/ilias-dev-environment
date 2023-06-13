@@ -17,6 +17,12 @@ export ILIAS_LOCAL_ROOT = path/to/local/ilias
 # Create docker container with
 docker-compose up
 
+# Install composer
+./installComposer.sh
+
+# Scan for plugins
+./scanForPlugins.sh
+
 ```
 
 This docker-compose relies heavily on the one suggested by https://hub.docker.com/r/sturai/ilias

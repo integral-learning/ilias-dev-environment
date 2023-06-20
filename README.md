@@ -25,4 +25,8 @@ docker-compose up
 
 ```
 
+## Good to know
+
+Plugins will not show up in Ilias until scanForPlugin.sh is executed
+
 This docker-compose relies heavily on the one suggested by https://hub.docker.com/r/sturai/ilias

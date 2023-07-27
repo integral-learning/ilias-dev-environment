@@ -9,7 +9,7 @@ You've dowloaded the ilias release you want to develop for. Make sure it's the s
 
 ```bash
 # save path to local ilias directory as environment variable
-export ILIAS_LOCAL_ROOT = path/to/local/ilias
+export ILIAS_LOCAL_ROOT="path/to/local/ilias"
 
 # Execute convenience script to download MUMIE Task plugin
 ./downloadMumieTaskPlugins.sh
